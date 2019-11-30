@@ -1,0 +1,169 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*
+	顶部开始
+*/
+#header{
+	width: 100%;
+	height: 50px;
+	background:#202329;
+}
+#header h4{
+	line-height: 50px;
+	width: 100px;
+	text-align: center;
+	background: #000000;
+	color: #00d7c6;
+	margin-left: 141px;
+}
+/*
+	顶部结束
+*/
+
+/*
+	主体开始
+*/
+#main{
+	width: 100%;
+	height:calc(100% - 50px);
+	background-image: linear-gradient(#487fd2,#65a6d2,#74b9d1);
+	position: relative;
+}
+#container{
+	width: 1075px;
+	height: 340px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+}
+/*
+	轮播图开始
+*/
+#container .swipe{
+	width: 735px;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+#swipe-item{
+	width: 300%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#swipe-item li{
+	width:735px;
+	height: 100%;
+	transition: all 1s ease;
+	float: left;
+	 
+}
+#swipe-item li:nth-child(1){
+	background: url(../image/1.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#swipe-item li:nth-child(2){
+	background:url(../image/2.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#swipe-item li:nth-child(3){
+	background:url(../image/3.png) no-repeat;
+	background-size: 100% 100%;
+}
+/*
+	轮播图结束
+*/
+
+/*
+	登录和注册
+*/
+#container .lregis{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #fff;
+	overflow: hidden;
+}
+#lr_box{
+	width: 100%;
+	flex: 1;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+#login {
+	box-sizing: border-box;
+	padding-top: 90px;
+	position: absolute;
+	transform: translateX(0%);
+	transition: all 1s ease;
+}
+#regis{
+	box-sizing: border-box;
+	padding-top:15px;
+	position: absolute;
+	transform: translateX(-200%);
+	position: absolute;
+	transition: all .5s ease;
+}
+#login input,#regis input{
+	width: 308px;
+	height: 38px;
+	border: 1px solid #808080;
+	outline: none;
+	border-radius: 5px;
+	padding-left: 5px;
+}
+
+#btn_box{
+	width: 100%;
+	height: 91px;
+	display: flex;
+	justify-content: center;
+}
+#btn_box button{
+	width: 103px;
+	height: 38px;
+	background:#903f3f;
+	outline: none;
+	border: none;
+	color: #fff;
+	margin-left: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#btn_box button.active{
+	background:#00a8ff;
+}
+
+#errName,#errPas,#errName1,#errPas1,#errPas2{
+	color: #FF0000;
+	line-height: 33px;
+	height: 33px;
+	display: block;
+	font-size: 14px;
+}
+
+/*
+	登录和注册
+*/
+/*
+	主体结束
+*/

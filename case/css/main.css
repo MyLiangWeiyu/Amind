@@ -1,0 +1,338 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+#left{
+	width: 252px;
+	height: 100%;
+	background: #216c8e;
+	text-align: center;
+	color: #fff;
+}
+#left .header{
+	height: 105px;
+	border-bottom: 1px solid #808080;
+	line-height: 105px;
+	font-size: 20px;
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#left ul{
+	width: 100%;
+}
+#left ul li{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px solid #808080;
+	cursor: pointer;
+}
+
+#left ul li.active{
+	background:#ffa500;
+}
+#right{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.r_header{
+	width: 100%;
+	height: 105px;
+	border-bottom: 1px solid #808080;
+	line-height: 105px;
+	background:#169085;
+	position: relative;
+	text-align: center;
+}
+.r_header #addPosition{
+	width: 100px;
+	height: 38px;
+	border: none;
+	outline: none;
+	background:#eadb6c;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.r_main{
+	flex: 1;
+	overflow: auto;
+}
+/*
+企业管理
+*/
+.enterprise{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.operate{
+	width: 100%;
+	height: 70px;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding:15px 100px;
+	box-sizing: border-box;
+	display: flex;
+}
+.operate input{
+	width: 160px;
+	height: 38px;
+	outline: none;
+	border: 1px solid #808080;
+	border-radius: 5px;
+	margin-left: 10px;
+	padding-left: 8px;
+}
+.operate button{
+	width: 100px;
+	height: 38px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	margin-left:10px;
+}
+.operate #addUser{
+	background:#0097e6;
+	margin-right: 30px;
+}
+.operate #query{
+	background: #FFC312;
+}
+.enterprise table{
+	max-height: 100px;
+	margin-left: 110px;
+	margin-top: 50px;
+}
+.enterprise table th,.enterprise table td{
+	width: 240px;
+	height: 40px;
+	text-align: center;
+}
+.enterprise table tr{
+	border: 1px solid #ccc;
+}
+.u_dele{
+	color: #FF0000;
+	margin-right: 10px;
+}
+.u_modify{
+	color: green;
+}
+.zg{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.zg_box{
+	width: 400px;
+	height: 300px;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 30px 51px;
+}
+.zg_box input{
+	width: 280px;
+	height: 38px;
+	border: 1px solid #ccc;
+	outline: none;
+	margin-bottom: 20px;
+	padding-left: 8px;
+}
+.zg_box button{
+	width: 100px;
+	height: 38px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+#define{
+	background: #00a8ff;
+	margin-left: 30px;
+}
+#cancel{
+	background: #FFC312;
+	margin-left: 10px;
+}
+/*
+企业管理
+*/
+
+/*
+职位管理
+*/
+#position{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	position: relative;
+}
+#position ul{
+	width: 970px;
+	box-sizing: border-box;
+	padding-top: 30px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#position ul li{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	display: flex;
+	margin-bottom: 19px;
+}
+.p_left{
+	flex: 2;
+	box-sizing: border-box;
+	padding:0px 15px;
+}
+.p_left h3,.p_main h3{
+	color: #009697;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+.price{
+	margin-bottom: 30px;
+}
+.price span:nth-child(1){
+	color: #FF0000;
+	font-size: 14px;
+}
+.price span:nth-child(2){
+	font-size: 14px;
+}
+.move span{
+	text-align: center;
+	display: inline-block;
+	font-size: 12px;
+	padding: 2px 10px;
+	border: 1px solid #999;
+	border-radius: 2px;
+}
+.p_main{
+	flex: 2;
+}
+.p_main p{
+	font-size: 14px;
+}
+.a_container{
+	margin-top: 30px;
+}
+.a_container a:nth-child(1){
+	color: #FF0000;
+	margin-right: 10px;
+}
+.a_container a:nth-child(2){
+	color:#e67e22;
+}
+.a_container span{
+	font-size: 12px;
+}
+.p_right{
+	flex: 1;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.img_box{
+	width: 56px;
+	height: 560px;
+	background:url(../image/t.png)no-repeat;
+	float: right;
+}
+/*
+职位管理
+*/
+
+/*
+添加职位
+*/
+#position_zg{
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.position_box{
+	padding: 20px 0px;
+	width: 500px;
+	position: absolute;
+	left: 50%;
+	top:30%;
+	transform: translateX(-50%);
+	background: #fff;
+
+}
+.position_box input{
+	width: 200px;
+	height: 35px;
+	border: 1px solid #ccc;
+	outline: none;
+	margin-bottom: 20px;
+	margin-left: 8px;
+	padding-left: 8px;
+}
+
+.position_box span{
+	text-align: right;
+	display: inline-block;
+	width: 180px;
+}
+.btn_position{
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+.btn_position button{
+	width: 100px;
+	height: 35px;
+	border: none;
+	outline: none;
+	margin-left: 20px;
+	cursor: pointer;
+	display: inline-block;
+}
+.btn_position button:nth-child(1){
+	background:#2ecc71;
+}
+.btn_position button:nth-child(2){
+	background: #f1c40f;
+}
+.btn_position button:nth-child(3){
+	background:#2980b9;
+}
+#po_edit{
+	position: absolute;
+	right: 252px;
+	visibility: hidden;
+}
